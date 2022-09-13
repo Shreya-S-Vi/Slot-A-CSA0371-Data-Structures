@@ -61,3 +61,62 @@ int main()
     }
     return 0;
 }
+
+
+OUTPUT:
+Queue using array
+1.Insertion
+2.Deletion
+3.Display
+4.Exit
+Enter the Choice:2
+
+Queue is empty
+Enter the Choice:1
+
+Enter number 1:5
+
+Enter the Choice:1
+
+Enter number 2:10
+
+Enter the Choice:1
+
+Enter number 3:15
+
+Enter the Choice:1
+
+Enter number 4:20
+
+Enter the Choice:1
+
+Enter number 5:25
+
+Enter the Choice:1
+
+Queue is Full
+Enter the Choice:3
+
+Queue Elements are:
+5
+10
+15
+20
+25
+
+Enter the Choice:2
+
+Deleted Element is 5
+Enter the Choice:2
+
+Deleted Element is 10
+Enter the Choice:3
+
+Queue Elements are:
+15
+20
+25
+
+Enter the Choice:4
+
+--------------------------------
