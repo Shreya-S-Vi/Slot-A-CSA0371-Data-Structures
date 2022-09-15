@@ -1,18 +1,27 @@
 #include<stdio.h>    
-void main()    
-{    
-	int n1=0,n2=1,n3,i,number;    
- 	printf("Enter the number of elements:");    
- 	scanf("%d",&number);    
- 	printf("\n%d %d",n1,n2);    
- 	for(i=2;i<number;++i)    
- 	{    
-  		n3=n1+n2;    
-  		printf(" %d",n3);    
-  		n1=n2;    
-  		n2=n3;    
- 	}   
-}    
+void fib(int n)
+{
+	static int n1=0,n2=1,n3;
+	if(n>0)
+	{
+		printf("%d ",n1);
+		n3=n1+n2;
+		n1=n2;
+		n2=n3;
+		fib(n-1);
+	}
+}
+
+int main()
+{
+	int n;
+	printf("Enter the number of terms:");
+	scanf("%d",&n);
+	printf("Fibonacci Series:\n");
+	fib(n);
+	return 0;
+}
+
 
 
 OUTPUT:
